@@ -1,12 +1,12 @@
-#Tìm hiểu mô hình OSI  
+# Tìm hiểu mô hình OSI  
 Tên: Hallen_Trần  
 Ngày cập nhật: 16/04/2017 
 ---  
 [1.OSI là gì?]( OSI)  
 [2.Phương thức hoạt động của OSI?]( Phương_Thức)  
 
-<a name OSI><a\>  
-##1.OSI là gì?  
+<a name OSI> <a\>  
+## 1.OSI là gì?  
 
 **Mô hình OSI (Open system interconnection – Mô hình kết nối các hệ thống mở) là một thiết kế dựa vào nguyên lý tầng cấp, lý giải một cách trừu tượng kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.**   
 
@@ -29,7 +29,8 @@ Ngày cập nhật: 16/04/2017
 **Lớp 7 Application:** giao tiếp trực tiếp với người dùng,cung cấp các ứng dụng mạng,cung cấp cơ chế xác thực người dùng.  
 
 <a name Phương_thức><a\n>  
-##2.Phương thức hoạt động của OSI?  
+
+## 2.Phương thức hoạt động của OSI?  
 3. Phương thức hoạt động của mô hình OSI
 – Mỗi tầng trong mô hình OSI, có hai phương thức hoạt động chính được áp dụng đó là: phương thức hoạt động có liên kết (connection–oriented) và không có liên kết (connectionless).  
 
