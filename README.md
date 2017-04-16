@@ -2,9 +2,6 @@
 Tên: Hallen_Trần  
 Ngày cập nhật: 16/04/2017 
 ---  
-[1.OSI là gì?]( OSI)  
-[2.Phương thức hoạt động của OSI?]( Phương_Thức)  
-<a name OSI> <a\>  
 ## 1.OSI là gì?  
 
 **Mô hình OSI (Open system interconnection – Mô hình kết nối các hệ thống mở) là một thiết kế dựa vào nguyên lý tầng cấp, lý giải một cách trừu tượng kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.**   
@@ -27,9 +24,7 @@ Ngày cập nhật: 16/04/2017
 
 **Lớp 7 Application:** giao tiếp trực tiếp với người dùng,cung cấp các ứng dụng mạng,cung cấp cơ chế xác thực người dùng.  
 
-<a name Phương_thức> <a\>  
 ## 2.Phương thức hoạt động của OSI?  
-3. Phương thức hoạt động của mô hình OSI
 – Mỗi tầng trong mô hình OSI, có hai phương thức hoạt động chính được áp dụng đó là: phương thức hoạt động có liên kết (connection–oriented) và không có liên kết (connectionless).  
 
 – Với phương thức có liên kết, trước khi truyền dữ liệu cần thiết phải thiết lập một liên kết logic giữa các thực thể cùng lớp (layer). Còn với phương thức không có liên kết, thì không cần lập liên kết logic và mỗi đơn vị dữ liệu trước hoặc sau đó.  
@@ -38,7 +33,7 @@ Ngày cập nhật: 16/04/2017
   - Thiết lập liên kết: hai thực thể đồng mức ở hai hệ thống thương lượng với nhau về tập các tham số sẽ được sử dụng trong giai đoạn sau.  
   - Truyền dữ liệu: dữ liệu được truyền với các cơ chế kiểm soát và quản lý.  
   - Hủy bỏ liên kết: giải phóng các tài nguyên hệ thống đã cấp phát cho liên kết để dùng cho các liên kết khác.  
-  **Quá trình truyền thông ngang hàng:**  
+## 3.Quá trình truyền thông ngang hàng: 
   Quá trình truyền thông ngang hàng mô phỏng cuộc nói chuyện đồng cấp chứ không phải di chuyển từ trên suống, lúc này ta có tầngứng dụng như thể đang nói chuyện với ứng dụng vậy, tương tự cho các tầng còn lại, lúc này chúng ta có đơn vị dữ liệu của các kết nối ngang hàng là có tên riêng, đơn vị của tầng Giao vận là Segment hoạc Datagram, đơn vị của tầng Mạng là Packet, đơn vị của tầng Liên kết dữ liệu là Frame, đơn vị của tầng Vật lý là Bit.    
   ![img](http://3.bp.blogspot.com/-eF3I6Z5k2hc/U4_p2OCuPGI/AAAAAAAAABg/6FeNp9qDyeM/s1600/4.PNG)
   
