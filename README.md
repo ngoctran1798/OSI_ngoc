@@ -2,7 +2,7 @@
 ## OSI là gì?  
 
 **Mô hình OSI (Open system interconnection – Mô hình kết nối các hệ thống mở) là một thiết kế dựa vào nguyên lý tầng cấp, lý giải một cách trừu tượng kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.**  
-![http://www.vnpro.vn/wp-content/uploads/2015/11/Osi-model-jb-600x639.png]  
+!(http://www.vnpro.vn/wp-content/uploads/2015/11/Osi-model-jb-600x639.png)  
 
 *Trong mô hình phân lớp:*
 
