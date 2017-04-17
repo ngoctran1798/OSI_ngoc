@@ -36,12 +36,12 @@ Ngày cập nhật: 16/04/2017
   - Truyền dữ liệu: dữ liệu được truyền với các cơ chế kiểm soát và quản lý.  
   - Hủy bỏ liên kết: giải phóng các tài nguyên hệ thống đã cấp phát cho liên kết để dùng cho các liên kết khác.  
   
-Quá trình đóng gói dữ liệu gửi :  
-    - Người gửi: Gửi một dữ liệu người dùng,dữ liệu này đi đầu tiên vào tầngứng dụng và được đóng thêm một nhân ở tầng ứng dụng, sau đó đi xuống tầng trình diễn lúc này toàn bộ nội dung của gói tin ở tầng ứng dụng trở thành data của gói tin tầng trình diễn và tầng trình diễn đóng thêm một nhãn vào gói tin, tương tự với các tầng còn lại, tức là toàn bộ gói tin tầng trên sẽ là dữ liệu gói tin tầng dưới, riêng tầng mạng sẽ được đóng IP header, còn tầng kết nối dữ liệu sẽ được đóng Frame header và bọc thêm phần kiễm tra lỗi FCS, sau khi gói tin đến tầng vật lý sẽ được chuyển sang dạng tín hiệu điện và được truyền dưới dạng bit 1 và bit 0.  
+**Quá trình đóng gói dữ liệu gửi :**  
+    - * Người Gửi*: Gửi một dữ liệu người dùng,dữ liệu này đi đầu tiên vào tầngứng dụng và được đóng thêm một nhân ở tầng ứng dụng, sau đó đi xuống tầng trình diễn lúc này toàn bộ nội dung của gói tin ở tầng ứng dụng trở thành data của gói tin tầng trình diễn và tầng trình diễn đóng thêm một nhãn vào gói tin, tương tự với các tầng còn lại, tức là toàn bộ gói tin tầng trên sẽ là dữ liệu gói tin tầng dưới, riêng tầng mạng sẽ được đóng IP header, còn tầng kết nối dữ liệu sẽ được đóng Frame header và bọc thêm phần kiễm tra lỗi FCS, sau khi gói tin đến tầng vật lý sẽ được chuyển sang dạng tín hiệu điện và được truyền dưới dạng bit 1 và bit 0.  
   ![img](http://3.bp.blogspot.com/-CRy6O9uSMLo/U4_p1WCpEMI/AAAAAAAAACA/-1vkyw0MUrk/s1600/2.PNG)  
   
- Quá trình mở gói dữ liệu:  
-     - Người Nhận: Lúc này quá trình diễn ra ngược lại so với quá trình người gửi, lúc này dòng bit nhị phân đi vào đường truyền vật lý và được đưa dần lên trên, đầu tiên khi đưa lên tầng liên kết dữ liệu nó sẽ được chuyển thành cấu trúc khung thành một đơn vị dữ liệu tầng liên kết dữ liệu, sau đó dữ liệu bắt đầu gỡ bỏ Frame header và FCS ở tầng liên kết dữ liệu để chuyển lên tầng mạng, tầng mạng tiếp tục gỡ bỏ IP header để chuyển lên tầng phiên cứ như thế mỗi lần đi lên lần lượt dữ liệu lại bỏ đi một header và cuối cùng khi đến tay người nhận thì nó trả lại nguyên vẹn dữ liệu ban đầu.    
+ **Quá trình mở gói dữ liệu:**  
+     - *Người Nhận*: Lúc này quá trình diễn ra ngược lại so với quá trình người gửi, lúc này dòng bit nhị phân đi vào đường truyền vật lý và được đưa dần lên trên, đầu tiên khi đưa lên tầng liên kết dữ liệu nó sẽ được chuyển thành cấu trúc khung thành một đơn vị dữ liệu tầng liên kết dữ liệu, sau đó dữ liệu bắt đầu gỡ bỏ Frame header và FCS ở tầng liên kết dữ liệu để chuyển lên tầng mạng, tầng mạng tiếp tục gỡ bỏ IP header để chuyển lên tầng phiên cứ như thế mỗi lần đi lên lần lượt dữ liệu lại bỏ đi một header và cuối cùng khi đến tay người nhận thì nó trả lại nguyên vẹn dữ liệu ban đầu.    
   ![img](http://4.bp.blogspot.com/-GLwwpCGieWo/U4_p1glHwpI/AAAAAAAAAB8/DippepZn-XY/s1600/3.PNG)
 
 ## 3.Quá trình truyền thông ngang hàng: 
