@@ -1,5 +1,5 @@
 # Tìm hiểu mô hình OSI  
-Tên: Hallen_Trần  
+Tên: Trần Thị Ngọc  
 Ngày cập nhật: 16/04/2017 
 ---  
 ## 1.OSI là gì?  
